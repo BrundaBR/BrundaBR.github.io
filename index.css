@@ -1,0 +1,142 @@
+
+ /*     Banner */
+.logo{
+    text-align: center;
+    background-color: #f0efe2;
+    font-family: 'Courier New', Courier, monospace;
+    height: 200px;
+    
+    border: none;
+    display: block;
+    padding: 50px 0;
+}
+
+    .main1 {
+        margin-left: 160px; /* Same as the width of the sidebar */
+        padding: 0px 10px;
+      }
+
+.sidebar{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #778899; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  .sidebar a{
+      color: white;
+      font-family: monospace;
+      font-weight: 900;
+      padding: 50px;
+  }
+.box{
+    
+    background-color: #f0efe2;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100px;
+    width:400px;
+    padding: 5px;
+}
+.box2{
+    background-color: #f0efe2;
+    font-family: 'Courier New', Courier, monospace;
+    height: 300px;
+    width:500px;
+    padding: 5px;
+
+}
+.box3{
+    justify-content: center;
+    width: 90%;
+    background-color: #f0efe2;
+    font-family: 'Courier New', Courier, monospac
+
+}
+.b1{
+    padding: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.blog p{
+    font-family: monospace;
+    padding: 20px;
+}
+/* nav bar  */
+.navbar-brand a{
+    text-decoration: none;
+    color: rgb(80, 99, 134);
+
+}
+.navbar-brand{
+    color: rgb(80, 99, 134);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.heading{
+    padding: 50px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* cards   styling            */
+
+.img{
+    height: 150px;
+}
+
+/* footer */
+.page-footer{
+    
+    color: black;
+   
+    background-color: #f0efe2;
+    
+}
+
+ /* portfolio */
+.head img{
+    margin-top: 5px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+.portfolio{
+    /* background-image: linear-gradient( 10.6deg,  rgba(196, 124, 155, 0.534) 3.0%, rgb(158, 175, 216) 97% ); */
+    height: 300px;
+    width: 250px;
+    border: 2px solid rgb(80, 67, 134);
+}
+.portfolio p{
+    
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.contact a .fa{
+    width: 100px;
+}
+.contact{
+    margin-bottom: 30px;
+}
+
+
+/* laptop */
+@media screen and (min-width: 1200px) {
+
+}
+/* mobile */
+
+@media screen and (min-width: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+
+}
