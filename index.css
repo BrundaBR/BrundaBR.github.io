@@ -142,8 +142,9 @@ a{
 }
 
 @media screen and (min-width: 300px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 10px;}
+ .sidebar {
+  display:none;
+ }
     .main1{
         padding: 1px;
         width: 100%;
