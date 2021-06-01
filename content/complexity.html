@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPLEXITY</title>
+    <title>Algorithmic Complexity for begineers</title>
+    <meta name="keywords" content="time complexity,space complexity,time and space complexity,datastructure and algorithm,brunda revadi,algorithmic complexity,complexity measure, scientific" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,44 +14,50 @@
     
 <center>
     <div class="main1">
-        <div class="logo"><h1>What is Complexity analysis?</h1></div>
+        <div class="logo"><h1>How do we measure algorithmic complexity?</h1></div>
     <p class="blog">
-        <i>Complexity Analysis</i>  is  measure of performance of an algorithm,
-        it helps to understand the time and Space algorithm would take in order to perform
-        in worst case,we are mainly 
-        focused on worst case as it gives us bigger picture of performance of algorithm when huge data is
-        is given has an input,this is reason we use Big O (denoted as O(n) or O(1) so on) as this is the only analysis
-        which gives the worst case factor for us to measure.
+        <i>Complexity Analysis</i>  is  measure to analyze performance of an algorithm,
+        it helps to understand the time and Space algorithm would consume for it to run,and basically it!,it is a measure to calcuate efficency of algorithm.
+        We mainly consider Big O (Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity)
+        to know the efficiency as it gives us the worst case measure.
+         Worst case gives us bigger picture regarding performance of algorithm when huge data is
+        is given has an input, this factor or big O notation helps us to figure out efficient way to deal with huge data.
+        
+        This being reason we use Big O notation (denoted as O(n) or O(1) so on) as this is the only analysis
+        which helps program developers to give programmers some basis for computing and measuring the efficiency of a specific algorithm.
         <br>
         <br>
-        An algorithm requires two factors which formulates its efficency which are 
+        An algorithm requires two factors which is considered in order to calcualte its efficency which are as follows
         <ol class="box">
             <li>Time Complexity</li>
             <li>Space Complexity</li>
         </ol>
         <br>
         Time complexity is the amount of computer time taken by an algorithm, <br>
-        <div class="box"> if a function runs with time T1 s is it the time complexity?</div>
+        <div class="box"> If a function runs with time T1 seconds is it the time complexity?</div>
         <br>
-        NO!<br>
-        Computer science has different way of describing the time complexity using Big O
+        <b>NO!</b><br>
+        <br>
+        
+        Computer scientists have different way of describing the efficiency for that matter time complexity using Big O notation
         which is approximate value of complexity where are all constants and calculations are ignored 
-       
-        as we really care about is degree of expression if degree is high we say it as
-        worst time complexity and good if it has one as degree and best if it takes constant
-        time which is O(1).
+        and degree of an expression is considered to represent efficiency and also solely dependent on input and the way we process input in order to store it.
+      
+        <b>O(1) is considered as Best case.</b>
+        
         <br>
         <br>
-        Here are few examples of time complexities .
+        Here are few examples of time complexities notations.
         <img  src="/Assets/comp.jpeg">
         <br>
 
-        <div class="logo">Here are few Time complexities<br>
+        <div class="logo">Lets look at few Time complexities notations<br>
             1. Constant Time<br>
             2. Linear Time<br>
             3. Logarithmic Time<br>
         </div>
-        <b>Constant time</b> does not depend on input, this is ideal case O(1) which is pronounced as  big O of 1.
+        <b>Constant time</b> does not depend on input, and is a  ideal case O(1) in computation which basically  pronounced as  big O of 1.
+        
         If T(n) is O(any constant value), this is equivalent to and stated in standard notation as T(n) being O(1).
         <br>
         <br>
@@ -62,7 +69,7 @@
         <br>
         <br>
 
-        <b>Linear Time</b> is where the running time increases if the input size is increased.
+        <b>Linear Time</b> is where the running time increases if the input size is increased.<br>
         In below example we see that the printing of value i takes O(1) time or constant time but the constant
         time is multiplied by n as loops runs for n values of input which makes it dependent on n
         and if value of n is increased then the time increases which is to say it takes linear time or O(n).
@@ -93,7 +100,7 @@
         <br>
         <br>
 
-        <div class="box">Thank you! </div>
+        <div class="box">Thank you! Keep learning </div>
 
 
        
