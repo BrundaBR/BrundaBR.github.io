@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Brunda Revadi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background-color: #111; /* Set body background to black */
+            color: #fff; /* Change text color to white for contrast */
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            color: #00ff00;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #61dafb; /* Link color */
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .terminal {
+            background-color: #000; /* Darker terminal background */
+            color: #00ff00; /* Terminal text color */
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px; /* Set max width for the terminal */
+            margin: 20px auto; /* Center the terminal */
+            overflow: hidden; /* Hide overflow */
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); Shadow effect */
+        }
+
+        .output {
+            white-space: pre-wrap; /* Preserve whitespace */
+            font-size: 1.1em; /* Font size */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #111;
+            color: #00ff00;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="terminal">
+            <div class="output" id="output"></div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Brunda Revadi. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const messages = [
+            'Please reach out via email: ',
+            'revadibrunda@gmail.com\n',
+            'Or connect with me on LinkedIn: ',
+            'https://www.linkedin.com/in/brundarevadi/\n',
+            'Thank you for visiting!',
+            ''
+        ];
+        
+        const output = document.getElementById('output');
+        let index = 0; // To track the current message
+        let charIndex = 0; // To track the current character in the message
+
+        function typeMessage() {
+            if (index < messages.length) {
+                if (charIndex < messages[index].length) {
+                    output.innerHTML += messages[index].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeMessage, 50); // Adjust typing speed here
+                } else {
+                    output.innerHTML += '\n'; // Add new line after each message
+                    index++;
+                    charIndex = 0; // Reset character index for the next message
+                    setTimeout(typeMessage, 500); // Wait before typing next message
+                }
+            }
+        }
+
+        // Start typing the messages when the page loads
+        window.onload = typeMessage;
+    </script>
+</body>
+</html>
