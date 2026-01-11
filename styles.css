@@ -89,7 +89,7 @@ Heading Section
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: clamp(120px, 12vw, 120px);
+    margin-bottom: clamp(90px, 12vw, 90px);
 
 }
 
@@ -144,11 +144,7 @@ First Section
 
 }
 
-.description-top {
-    font-size: 2rem;
-    font-weight: 700;
-    /* margin-bottom: 10px; */
-}
+
 
 .freelance-offer {
     max-width: 1200px;
@@ -165,19 +161,6 @@ First Section
     flex: 1;
 }
 
-.content p {
-    width: 90%;
-    height: 150px;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    flex: 0 0 350px;
-    /* flex: 1; */
-    /* padding: 30px; */
-
-    /* background-color: #2a2a2a; */
-
-}
-
 .content {
     /* align-items: center;
     justify-content: center;
@@ -186,8 +169,6 @@ First Section
     /* min-width: 50%; */
     flex: 0 0 350px;
     border-radius: 10px;
-
-
     /* width: 420px; */
 }
 
@@ -195,22 +176,21 @@ First Section
     display: flex;
     gap: 50px;
     transition: transform 0.5s ease;
-
 }
 
 .card {
+     position: relative;
     flex: 0 0 450px;
     /* fixed visible card size */
     background-color: #2a2a2a;
     color: white;
-    padding: 30px;
+    padding: 60px 30px 30px; 
     border-radius: 10px;
     text-align: center;
     height: 250px;
 }
 
 .carousel-container {
-    /* padding: 30px; */
     display: flex;
     align-items: center;
     width: 100%;
@@ -222,8 +202,6 @@ First Section
     width: 100%;
     overflow: hidden;
     display: flex;
-    /* gap: 50px; */
-    /* padding: 0 20px; */
 }
 
 .freelance-offer button {
@@ -235,6 +213,9 @@ First Section
     opacity: 0.2;
 }
 
+/* ----------------------------------------------------------------------------------------
+projects Section
+----------------------------------------------------------------------------------------------  */
 .projects {
     max-width: 1200px;
     display: flex;
@@ -266,11 +247,6 @@ First Section
     padding: 0 24px;
 }
 
-.description-top {
-    padding: 30px 0 0 0;
-    color: white;
-}
-
 .see-more {
     width: 1200px;
     margin: 0 auto;
@@ -286,6 +262,80 @@ First Section
     padding: 10px;
 }
 
+/* ----------------------------------------------------------------------------------------
+heading Section
+----------------------------------------------------------------------------------------------  */
+.description-top {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 30px 0 30px 0;
+    color: white;
+}
+.para{
+    font-size: 1rem;
+    width: 90%;
+    height: 150px;
+    line-height: 1.5rem;
+    flex: 0 0 350px;
+}
+
+/* ----------------------------------------------------------------------------------------
+card Section
+----------------------------------------------------------------------------------------------  */
+.card-content h3 ,.project-content h3 {
+    font-size: 1.5rem;
+}
+.card-content p {
+    font-size: 1.2rem;
+    list-style: 1.2rem;
+    padding: 20px;
+}
+.project-content p{
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+
+.circle {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 58px;
+  height: 58px;
+  padding: 4px;          /* ⬅ ring thickness */
+  border-radius: 50%;
+
+  background: linear-gradient(
+    90deg,
+    rgb(111, 255, 164),
+    rgb(98, 240, 237)
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  inset: 4px;            /* ⬅ SAME as padding */
+  /* background-color: #1f1f1f; */
+  border-radius: 50%;
+}
+
+.circle i {
+  position: relative;
+  font-size: 16px;
+  color: #1f1f1f;
+  padding:1px;
+}
+/* ----------------------------------------------------------------------------------------
+mobile 800 Section
+----------------------------------------------------------------------------------------------  */
 @media (max-width: 800px) {
     .freelance-offer {
         flex-direction: column;
@@ -321,8 +371,45 @@ First Section
         justify-content: center;
         text-align: center;
     }
-}
+    
+    .nav-links {
+        background-color: #1f1f1f;
+        flex-direction: column;
+        height: 100vh;
+        width: 50%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        padding-top: 50%;
+        transition: .1s ease-in;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    }
 
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+
+        transform: rotate(-45deg) translate(-50%, -50%);
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: rotate(45deg) translate(-50%, 50%);
+    }
+
+}
+/* ----------------------------------------------------------------------------------------
+mobile 600 Section
+----------------------------------------------------------------------------------------------  */
 @media (max-width: 600px) {
     .content {
         display: flex;
