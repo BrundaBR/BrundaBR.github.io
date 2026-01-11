@@ -1,54 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brunda Revadi</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+
 </head>
+
 <body>
     <header>
-        <h1>Hello, I am Brunda Revadi</h1>
-        <p>A Full Stack Web Developer</p>
         <nav>
-            <ul>
+            <div class="brand">
+                <img src="./assets/brand.png" alt="">
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-<<<<<<< Updated upstream
-                <li><a href="contact.html">Contact</a></li>
-=======
+
+                <!-- <li><a href="contact.html">Contact</a></li> -->
                 <!-- <li><a href="/Pages/mentorship.html">Mentorship</a> -->
                 <!-- <li><a href="/Pages/projects.html">Projects</a> -->
                 <li><a href="./Pages/freelance.html">Freelance Requests</a>
                 <li><a href="https://ko-fi.com/brundarevadi">Buy Me Coffee</a></li>
                 </li>
->>>>>>> Stashed changes
+
             </ul>
         </nav>
+        <div class="header-end"></div>
     </header>
     <main>
-        <div class="content">
-            <div class="profile-picture">
-                <img src="assets/profile.png" alt="Profile Picture">
+        <section class="heading">
+            Hi, I'm an engineer with an eye for design and a love for elegant solutions.
+        </section>
+        <section class="multi-container">
+            <div class="profile"><img src="assets/profile.jpg"></div>
+            <div class="description">
+                <div class="description-top">Biography</div>
+                <p>Hello! I'm Brunda Revadi, a passionate software engineer with a knack for creating elegant solutions.
+                    Let's connect and explore how we can collaborate to bring ideas to life!</p>
             </div>
-            <div class="bio">
-                <h2>About Me</h2>
-                <p>I'm an experienced Full Stack Python Developer with a passion for building robust applications and optimizing existing systems. My goal is to help businesses enhance their digital presence.</p>
-            </div>
-        </div>
-        <section class="skills">
-            <h2>Skills</h2>
-            <div class="skill-set">
-                <div class="skill">Python</div>
-                <div class="skill">Java</div>
-                <div class="skill">Django</div>
-                <div class="skill">AWS</div>
-                <div class="skill">TypeScript</div>
-                <div class="skill">Microservices</div>
+            <div class="reach">
+                <div class="description-top">Let's Connect</div>
+
+                <a href="https://twitter.com/BrundaBR" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/in/brundarevadi" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </section>
+        <section class="freelance-offer">
+            <div class="content">
+                <div class="description-top">What I Offer</div>
+                <p class="para">Explore my latest projects showcasing my skills in automations & websites for freelance. From innovative
+                    web applications to efficient algorithms, discover how I turn ideas into reality.</p>
+            </div>
+            <div class="carousel-container">
+                <button class="nav prev">‹</button>
+                <div class="carousel">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="circle">
+                                 <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Web Sites</h3>
+                                <p>Freelance web developer with experience delivering 10+ websites for startups, focused on building modern, responsive, and business-driven web solutions.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="circle">
+                                 <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Automations</h3>
+                                <p>I help businesses automate critical workflows—turning manual processes into efficient, hands-free systems. My automation scripts are built to run reliably in real-world environments and scale as operations grow.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="circle">
+                                 <i class="fa-solid  fa-screwdriver-wrench"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Tech Admin</h3>
+                                <p>I help startups manage their technical infrastructure by handling deployments, monitoring, backups, and automation—reducing downtime and operational overhead.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="circle">
+                                 <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Website Design</h3>
+                                <p>Designing clean, responsive websites that turn ideas into engaging digital experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav next">›</button>
+            </div>
+
+        </section>
+        <section class="projects">
+            <div class="description-top">Recent Projects</div>
+            <div class="project-list">
+                <div class="project-item">
+                    <div class="project-img"><img src="assets/indolotus.png"></div>
+                    <div class="project-content">
+                        <h3>Indolotus</h3>
+                        <p>Created a modern, product-centric website for Indolotus, a tiles brand serving customers in India and abroad. The site focuses on showcasing tile collections with clear categorization, strong visuals, and a seamless browsing experience to support brand visibility and customer engagement.</p>
+                    </div>
+
+                </div>
+                <div class="project-item">
+                    <div class="project-img"><img src="assets/stock.png"></div>
+                    <div class="project-content">
+                        <h3>Stock Analysis</h3>
+                        <p>A Django-based stock analytics platform that automates market data processing and generates actionable insights using optimized Pandas workflows.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="see-more"><button>See More</button></div>
     </main>
-    <footer>
-        <p>© 2024 Brunda Revadi. All Rights Reserved.</p>
-    </footer>
+    <script src="index.js"></script>
 </body>
+
 </html>
