@@ -1,3 +1,4 @@
-# BrundaBR.github.io
 
 # Portfolio website
+- Freelance Projects 
+- Skills
